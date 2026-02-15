@@ -80,11 +80,7 @@ def explain(text):
 # ==========================
 # UI
 # ==========================
-user_input = st.text_area(
-    "Enter News Text Below:",
-    height=200,
-    placeholder="Paste news article text here..."
-)
+user_input = st.text_area("Enter News Text Below:", height=200, placeholder="Paste news article text here...")
 if st.button("Analyze"):
     if user_input.strip() == "":
         st.warning("Please enter some text.")
