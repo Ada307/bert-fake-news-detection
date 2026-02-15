@@ -12,7 +12,7 @@ ENV/
 *.bin
 *.pt
 *.pth
-saved_model/
+model/saved_model/
 
 logs/
 *.log
@@ -23,3 +23,4 @@ Thumbs.db
 .streamlit/
 
 data/*.csv
+*.zip
