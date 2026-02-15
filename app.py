@@ -19,8 +19,8 @@ st.write("Deep Learning + Explainable AI (SHAP)")
 # ==========================
 @st.cache_resource
 def load_model():
-    model = BertForSequenceClassification.from_pretrained("model/saved_model")
-    tokenizer = BertTokenizer.from_pretrained("model/saved_model")
+    model = BertForSequenceClassification.from_pretrained("adaj0610/bert-fake-news-detector")
+    tokenizer = BertTokenizer.from_pretrained("adaj0610/bert-fake-news-detector")
     return model, tokenizer
 
 model, tokenizer = load_model()
