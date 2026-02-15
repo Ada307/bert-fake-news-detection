@@ -93,5 +93,4 @@ if st.button("Analyze"):
             st.success(f"Prediction: REAL ✅ (Confidence: {conf:.2f})")
 
         st.subheader("Explainability (SHAP)")
-        shap_values = explain(user_input)
-        st.pyplot(shap.plots.text(shap_values[0], display=False))
+        st.info("SHAP explanation available in local version.")
